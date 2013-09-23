@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* The main config file
+*
+* @category    Sitewards
+* @package     Sitewards_InstantSearchResult
+* @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+*/
+-->
+<config>
+	<modules>
+		<Sitewards_InstantSearchResult>
+			<version>1.0.0</version>
+		</Sitewards_InstantSearchResult>
+	</modules>
+	<global>
+		<models>
+			<sitewards_instantsearchresult>
+				<class>Sitewards_InstantSearchResult_Model</class>
+			</sitewards_instantsearchresult>
+		</models>
+		<helpers>
+			<instantsearchresult>
+				<class>Sitewards_InstantSearchResult_Helper</class>
+			</instantsearchresult>
+		</helpers>
+		<events>
+			<core_block_abstract_to_html_before>
+				<observers>
+					<sitewards_instantsearchresult>
+						<class>sitewards_instantsearchresult/observer</class>
+						<method>onCoreBlockAbstractToHtmlBefore</method>
+					</sitewards_instantsearchresult>
+				</observers>
+			</core_block_abstract_to_html_before>
+		</events>
+	</global>
+	<adminhtml>
+		<translate>
+			<modules>
+				<Sitewards_InstantSearchResult>
+					<files>
+						<default>Sitewards_InstantSearchResult.csv</default>
+					</files>
+				</Sitewards_InstantSearchResult>
+			</modules>
+		</translate>
+	</adminhtml>
+	<default>
+		<instantsearchresult>
+			<generalsettings>
+				<active>1</active>
+			</generalsettings>
+		</instantsearchresult>
+	</default>
+</config>

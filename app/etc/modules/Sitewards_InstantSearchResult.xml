@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Sitewards_InstantSearchResult.xml
+*	- Activate module,
+*	- Specify code pool,
+*	- Set-up dependencies
+*
+* @category    Sitewards
+* @package     Sitewards_InstantSearchResult
+* @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+*/
+-->
+<config>
+	<modules>
+		<Sitewards_InstantSearchResult>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_CatalogSearch/>
+			</depends>
+		</Sitewards_InstantSearchResult>
+	</modules>
+</config>

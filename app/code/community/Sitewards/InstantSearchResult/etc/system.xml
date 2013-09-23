@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Sitewards
+ * @package     Sitewards_InstantSearchResult
+ * @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+ */
+-->
+<config>
+	<sections>
+		<instantsearchresult translate="label" module="instantsearchresult">
+			<label>Instant Search Result</label>
+			<tab>catalog</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>990</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<generalsettings translate="label">
+					<label>General settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<active translate="label,comment">
+							<label>Enable extension</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Enable or disable extension.]]></comment>
+						</active>
+					</fields>
+				</generalsettings>
+			</groups>
+		</instantsearchresult>
+	</sections>
+</config>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category    Sitewards
+ * @package     Sitewards_InstantSearchResult
+ * @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+ */
+-->
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<instantsearchresult translate="title" module="instantsearchresult">
+										<title>Instant Search Result</title>
+										<sort_order>50</sort_order>
+									</instantsearchresult>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
