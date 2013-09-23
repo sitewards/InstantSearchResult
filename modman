@@ -2,4 +2,6 @@
 /app/etc/modules/Sitewards_InstantSearchResult.xml /app/etc/modules/Sitewards_InstantSearchResult.xml
 /app/locale/de_DE/Sitewards_InstantSearchResult.csv /app/locale/de_DE/Sitewards_InstantSearchResult.csv
 /app/locale/en_US/Sitewards_InstantSearchResult.csv /app/locale/en_US/Sitewards_InstantSearchResult.csv
+/app/locale/ru_RU/Sitewards_InstantSearchResult.csv /app/locale/ru_RU/Sitewards_InstantSearchResult.csv
+/app/locale/uk_UA/Sitewards_InstantSearchResult.csv /app/locale/uk_UA/Sitewards_InstantSearchResult.csv
 

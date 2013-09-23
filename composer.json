@@ -2,7 +2,7 @@
 	"name": "sitewards/catalogsearch_instantsearchresult",
 	"license": "OSL-3.0",
 	"type": "magento-module",
-	"description": "This extension provides functionality of redirecting to detailpage if search result has only 1 product",
+	"description": "This extension provides functionality of redirecting to detailpage if there is only 1 product returned from the search",
 	"homepage": "http://www.sitewards.com",
 	"require": {
 		"magento-hackathon/magento-composer-installer": "*"

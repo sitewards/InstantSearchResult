@@ -10,7 +10,8 @@
  */
 class Sitewards_InstantSearchResult_Model_Observer {
 	/**
-	 * if result is only 1 product redirect to detailpage of product
+	 * If there is only 1 product returned from the search redirect to detailpage of product
+	 *
 	 * @param Varien_Event_Observer $oObserver
 	 */
 	public function onCoreBlockAbstractToHtmlBefore(Varien_Event_Observer $oObserver) {
@@ -19,8 +20,8 @@ class Sitewards_InstantSearchResult_Model_Observer {
 		}
 		$oBlock = $oObserver->getBlock();
 		// only on block catalogsearch result
+		/* @var $oBlock Mage_CatalogSearch_Block_Result */
 		if ($oBlock instanceof Mage_CatalogSearch_Block_Result) {
-			/* @var $oBlock Mage_CatalogSearch_Block_Result */
 			$oRequest = Mage::app()->getRequest();
 			if (!$oRequest->isAjax()) {
 				if ($oBlock->getResultCount() == 1) {
@@ -50,7 +51,6 @@ class Sitewards_InstantSearchResult_Model_Observer {
 		if (!($oProduct instanceof Mage_Catalog_Model_Product)) {
 			throw new Mage_Exception('fetched item is not a product');
 		}
-		$oProduct = Mage::getModel('catalog/product')->load($oProduct->getId());
 		return $oProduct->getProductUrl() . $oProduct->getUrlPath();
 	}
 }

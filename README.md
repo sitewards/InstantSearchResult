@@ -5,7 +5,7 @@ The Sitewards InstantSearchResult Extension provides functionality of redirectin
 
 Features
 ------------------
-* If search result has only one product, it redirects you directly to its details page.
+* If there is only 1 product returned from the search redirect to detailpage of product
 
 File list
 ------------------
