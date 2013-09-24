@@ -18,6 +18,7 @@
 			<codePool>community</codePool>
 			<depends>
 				<Mage_CatalogSearch/>
+				<Mage_Catalog/>
 			</depends>
 		</Sitewards_InstantSearchResult>
 	</modules>
