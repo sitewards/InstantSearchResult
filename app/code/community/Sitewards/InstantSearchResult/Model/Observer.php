@@ -20,7 +20,7 @@ class Sitewards_InstantSearchResult_Model_Observer {
 		}
 		$oBlock = $oObserver->getBlock();
 		// only on block catalogsearch result
-		/* @var $oBlock Mage_CatalogSearch_Block_Result */
+		/* @var Mage_CatalogSearch_Block_Result $oBlock */
 		if ($oBlock instanceof Mage_CatalogSearch_Block_Result) {
 			$oRequest = Mage::app()->getRequest();
 			if (!$oRequest->isAjax()) {
@@ -40,13 +40,13 @@ class Sitewards_InstantSearchResult_Model_Observer {
 	 * @return String
 	 */
 	private function getProductUrl(Mage_CatalogSearch_Block_Result $oBlock) {
-		/* @var $oListBlock Mage_Catalog_Block_Product_List */
+		/* @var Mage_Catalog_Block_Product_List $oListBlock */
 		$oListBlock = $oBlock->getListBlock();
 		// we have to execute toHtml so all events get fired which filter the product collection
 		$oListBlock->toHtml();
-		/* @var $oProductCollection Mage_Catalog_Model_Resource_Product_Collection */
+		/* @var Mage_Catalog_Model_Resource_Product_Collection $oProductCollection */
 		$oProductCollection = $oListBlock->getLoadedProductCollection();
-		/* @var $oProduct Mage_Catalog_Model_Product */
+		/* @var Mage_Catalog_Model_Product $oProduct */
 		$oProduct = $oProductCollection->fetchItem();
 		if (!($oProduct instanceof Mage_Catalog_Model_Product)) {
 			throw new Mage_Exception('fetched item is not a product');
